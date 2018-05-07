@@ -29,13 +29,13 @@ int main(){
             lcd.SetBackColor(LCD_COLOR_WHITE);
             lcd.SetTextColor(LCD_COLOR_BLACK);                        
             lcd.DisplayStringAt(0, LINE(1), (uint8_t *)"Welcome", CENTER_MODE);
-            lcd.DrawCircle(237, 155, 70);
-            lcd.DrawCircle(237, 155, 71);
-            lcd.DrawCircle(237, 155, 72);
-            lcd.DrawCircle(237, 155, 73);
-            lcd.DisplayStringAt(0, LINE(6), (uint8_t *)"Start", CENTER_MODE);
+           // lcd.DrawCircle(237, 155, 70); //first argument is X position, 2nd is Y position, 3rd is radius of circle
+            lcd.FillCircle(237, 155, 70);
+            lcd.SetBackColor(LCD_COLOR_BLACK);            
+            lcd.SetTextColor(LCD_COLOR_WHITE);                        
+            lcd.DisplayStringAt(0, LINE(6), (uint8_t *)"Start", CENTER_MODE); // first argument is X pos, second is Y pos
             ts.GetState(&TS_State);
-            while(TS_State.touchDetected == false){
+            while(TS_State.touchDetected == false){ //start the code once we've pressedthe screen
                 ts.GetState(&TS_State);
                 }
             lcd.Clear(LCD_COLOR_BLUE); 
