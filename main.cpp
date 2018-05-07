@@ -39,6 +39,9 @@ int main(){
                 ts.GetState(&TS_State);
                 }
             lcd.Clear(LCD_COLOR_BLUE); 
+            lcd.SetTextColor(LCD_COLOR_BLACK);                        
+            lcd.FillRect(138, 60, 200, 150);
+            lcd.SetTextColor(LCD_COLOR_WHITE);                        
             lcd.DisplayStringAt(0, LINE(3), (uint8_t *)"Driver", CENTER_MODE);
             lcd.DisplayStringAt(0, LINE(5), (uint8_t *)"Alertness", CENTER_MODE);
             lcd.DisplayStringAt(0, LINE(7), (uint8_t *)"System", CENTER_MODE);
