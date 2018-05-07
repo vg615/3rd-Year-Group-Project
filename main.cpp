@@ -11,7 +11,7 @@ int main(){
             uint8_t status;
             TS_StateTypeDef TS_State;
             
-            status = ts.Init(lcd.GetXSize(), lcd.GetYSize());
+            status = ts.Init(lcd.GetXSize(), lcd.GetYSize()); 
             if (status != TS_OK) { //checks if touch screen functions normally
                 lcd.Clear(LCD_COLOR_RED);  //clears the screen and fills it with red
                 lcd.SetBackColor(LCD_COLOR_RED);
@@ -24,7 +24,8 @@ int main(){
                 lcd.SetTextColor(LCD_COLOR_WHITE);
                 lcd.DisplayStringAt(0, LINE(5), (uint8_t *)"TOUCHSCREEN INIT OK", CENTER_MODE);
                 }
-            wait(3);    
+            wait(3);
+            //display "start", and wait for user touching the screen before running rest of code    
             lcd.Clear(LCD_COLOR_BLUE);
             lcd.SetBackColor(LCD_COLOR_WHITE);
             lcd.SetTextColor(LCD_COLOR_BLACK);                        
