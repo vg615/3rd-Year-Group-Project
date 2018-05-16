@@ -29,8 +29,15 @@ class SecondViewController: UIViewController, UITableViewDelegate, UITableViewDa
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         do{
+           
             let audioPath = Bundle.main.path(forResource: songs[indexPath.row], ofType: ".mp3")
             try audioPlayer = AVAudioPlayer(contentsOf: NSURL(fileURLWithPath: audioPath!) as URL)
+            for row in 0..<tableView.numberOfRows(inSection: indexPath.section) {
+                if let cell = tableView.cellForRow(at: IndexPath(row: row, section: indexPath.section)) {
+                    cell.accessoryType = row == indexPath.row ? .checkmark : .none
+                }
+            }
+             tableView.cellForRow(at: indexPath)?.accessoryType = UITableViewCellAccessoryType.checkmark
             audioPlayer.play()
         }
         catch{
