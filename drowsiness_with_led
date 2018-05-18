@@ -20,7 +20,7 @@ def yawn_more_than_once():
 
     
 def fall_asleep():
-    th.buzzer.blink(0.1, 0.1, 2, background=True)
+    th.buzzer.blink(0.1, 0.1, 5, background=True)
     
 
 
