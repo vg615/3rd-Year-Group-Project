@@ -20,7 +20,7 @@ def yawn_more_than_once():
 
     
 def fall_asleep():
-    th.buzzer.blink(0.1, 0.1, 10, background=True)
+    th.buzzer.blink(0.1, 0.1, 2, background=True)
     
 
 
@@ -81,7 +81,7 @@ def mouth_aspect_ratio(mouth):
 # blink and then a second constant for the number of consecutive
 # frames the eye must be below the threshold for to set off the
 # alarm
-EYE_AR_THRESH = 0.25
+EYE_AR_THRESH = 0.23
 EYE_AR_CONSEC_FRAMES = 3
 
 MOUTH_AR_THRESH = 0.65
@@ -149,10 +149,9 @@ while True:
 		    # if the eyes were closed for a sufficient number of
 		    # frames, then sound the alarm
 		    if COUNTER_EYE >= EYE_AR_CONSEC_FRAMES:
-                        pass
-                        #t_drowsy = Thread(target = fall_asleep)
-                        #t_drowsy.deamon = True
-                        #t_drowsy.start()
+                        t_drowsy = Thread(target = fall_asleep)
+                        t_drowsy.deamon = True
+                        t_drowsy.start()
 			    
 	    
             # otherwise, the eye aspect ratio is not below the blink
