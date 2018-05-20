@@ -19,7 +19,15 @@ class FirstViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
+    @IBAction func buttonPressed(_ sender: Any) {
+        
+        var alert = UIAlertController(title: "Alert!", message: "Bluetooth Not Connected", preferredStyle: UIAlertControllerStyle.alert)
+        alert.addAction(UIAlertAction(title: "Close", style: UIAlertActionStyle.default, handler: nil))
+        
+        self.present(alert, animated:true, completion:nil)
+    }
+    
 
 }
 
