@@ -25,7 +25,8 @@ import cv2
 from threading import Thread
 
 mainloop = None
-sig= 84
+sig= 80
+
 
 BLUEZ_SERVICE_NAME = 'org.bluez'
 GATT_MANAGER_IFACE = 'org.bluez.GattManager1'
@@ -258,7 +259,7 @@ class WaitSignalCharacteristic(Characteristic):
         #if self.signal !=80:
          #  self.signal-=1
         #else:
-        self.signal = 84
+        self.signal = sig
         
         print('New signal is: ' + repr(self.signal))
         self.notify_new_signal()
@@ -402,7 +403,7 @@ def big_thread():
                                     error_handler=register_app_error_cb)
 
 def big_thread2():
-    global yawns, count, test_yawn
+    global yawns, count, test_yawn, sig
     while True:
         frame = vs.read()
         frame = imutils.resize(frame, width=450)
@@ -448,12 +449,15 @@ def big_thread2():
                         # frames, then sound the alarm
                         if COUNTER_EYE >= EYE_AR_CONSEC_FRAMES:
                             th.lights.green.off()
+                            sig = 84
+                            
       
                 # otherwise, the eye aspect ratio is not below the blink
                 # threshold, so reset the counter and alarm
                 else:
                     COUNTER_EYE = 0
                     th.lights.green.on()
+                    sig = 80
                     
                 if mar > MOUTH_AR_THRESH:
                     COUNTER_MOUTH += 1
