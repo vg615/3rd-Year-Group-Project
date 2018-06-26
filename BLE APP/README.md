@@ -1,8 +1,7 @@
-# 3rd-Year-Group-Project
-Storage space for all the software regarding Driver Alertness Project
+BLE APP
 
-BLE APP folder contains the code for the ios app.
+click the clone or download button on the top right, then select “Download ZIP”. 
 
-Final Raspberry Case.zip contains the 3D printing design of the case.
+Uncompresse the zip file to get folder named 3rd-Year-Group-Project-master first, there is one subfolder called BLE APP, which contains the ios App as a project. 
 
-Final code is the python file needed to be run in Raspberry Pi.
+Drag the whole subfolder to Xcode is the easiest way to set it up, otherwise the user need to copy and paste each file which is not recommended.
