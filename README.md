@@ -1,5 +1,5 @@
 # 3rd-Year-Group-Project
-Storage space for all the software regarding Driver Alertness Project
+Storage space for all the code and software regarding Driver Alertness Project
 
 BLE APP folder contains the code for the ios app.
 
