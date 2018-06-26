@@ -11,6 +11,6 @@ In oder to run the app on iphone, the user must have apple developer account (fr
 
 Firstly, click the clone or download button on the top right, then select “Download ZIP”.
 
-Sencondly, Uncompresse the zip file to get folder named 3rd-Year-Group-Project-master, there is one subfolder called BLE APP, which contains the ios App as a project.
+Sencondly, Uncompresse the zip file to get a folder named 3rd-Year-Group-Project-master, there is one subfolder called BLE APP, which contains the ios App as a project.
 
 Then Drag the whole subfolder to Xcode, it is the easiest way to set it up, otherwise the user need to copy and paste each file which is not recommended.
