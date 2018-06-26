@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B1363F420E2DCCA00B5225C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B1363F320E2DCCA00B5225C /* Assets.xcassets */; };
 		2B35129920B5A5D4008BAD2A /* Sample.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2B35129420B5A5D3008BAD2A /* Sample.mp3 */; };
 		2B35129A20B5A5D4008BAD2A /* Kendrick Lamar-All The Stars (Clean).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2B35129520B5A5D3008BAD2A /* Kendrick Lamar-All The Stars (Clean).mp3 */; };
 		2B35129B20B5A5D4008BAD2A /* SZA-Doves In the Wind (Explicit).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2B35129620B5A5D3008BAD2A /* SZA-Doves In the Wind (Explicit).mp3 */; };
@@ -17,7 +18,6 @@
 		2B92281320C19B2500EED078 /* Bon Jovi-It's My Life.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2B92281220C19B2500EED078 /* Bon Jovi-It's My Life.mp3 */; };
 		2B92281520C7F6BA00EED078 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B92281420C7F6BA00EED078 /* StoreKit.framework */; };
 		2B92281720C7F6D500EED078 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B92281620C7F6D500EED078 /* MediaPlayer.framework */; };
-		2B92281B20CACCB000EED078 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B92281A20CACCAF00EED078 /* Assets.xcassets */; };
 		2BEDA08820B9B16F00D82FE1 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BEDA08720B9B16F00D82FE1 /* CoreBluetooth.framework */; };
 		2BEDA08C20B9B2E300D82FE1 /* UartModuleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BEDA08B20B9B2E300D82FE1 /* UartModuleViewController.swift */; };
 		D50657241DF2F4C8002B7557 /* UUIDKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = D50657231DF2F4C8002B7557 /* UUIDKey.swift */; };
@@ -29,6 +29,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2B1363F320E2DCCA00B5225C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2B35129420B5A5D3008BAD2A /* Sample.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Sample.mp3; sourceTree = "<group>"; };
 		2B35129520B5A5D3008BAD2A /* Kendrick Lamar-All The Stars (Clean).mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Kendrick Lamar-All The Stars (Clean).mp3"; sourceTree = "<group>"; };
 		2B35129620B5A5D3008BAD2A /* SZA-Doves In the Wind (Explicit).mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "SZA-Doves In the Wind (Explicit).mp3"; sourceTree = "<group>"; };
@@ -39,7 +40,6 @@
 		2B92281220C19B2500EED078 /* Bon Jovi-It's My Life.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Bon Jovi-It's My Life.mp3"; sourceTree = "<group>"; };
 		2B92281420C7F6BA00EED078 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		2B92281620C7F6D500EED078 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
-		2B92281A20CACCAF00EED078 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "../../update/Basic Chat/Assets.xcassets"; sourceTree = "<group>"; };
 		2BEDA08720B9B16F00D82FE1 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
 		2BEDA08B20B9B2E300D82FE1 /* UartModuleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UartModuleViewController.swift; path = "../../../../.Trash/当前实验版本/Dare/UartModuleViewController.swift"; sourceTree = "<group>"; };
 		D50657231DF2F4C8002B7557 /* UUIDKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UUIDKey.swift; sourceTree = "<group>"; };
@@ -117,7 +117,7 @@
 				D50657231DF2F4C8002B7557 /* UUIDKey.swift */,
 				2BEDA08B20B9B2E300D82FE1 /* UartModuleViewController.swift */,
 				D5B24DDF1DEE393B00D33B5A /* Main.storyboard */,
-				2B92281A20CACCAF00EED078 /* Assets.xcassets */,
+				2B1363F320E2DCCA00B5225C /* Assets.xcassets */,
 				D5B24DE41DEE393B00D33B5A /* LaunchScreen.storyboard */,
 				D5B24DE71DEE393B00D33B5A /* Info.plist */,
 				2B35129320B5A5D3008BAD2A /* Songs */,
@@ -192,7 +192,7 @@
 				2B35129920B5A5D4008BAD2A /* Sample.mp3 in Resources */,
 				2B35129D20B5A5D4008BAD2A /* Camila Cabello-Never Be the Same.mp3 in Resources */,
 				D5B24DE11DEE393B00D33B5A /* Main.storyboard in Resources */,
-				2B92281B20CACCB000EED078 /* Assets.xcassets in Resources */,
+				2B1363F420E2DCCA00B5225C /* Assets.xcassets in Resources */,
 				2B35129B20B5A5D4008BAD2A /* SZA-Doves In the Wind (Explicit).mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
