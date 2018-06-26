@@ -7,7 +7,7 @@ Storage space for all the code and software regarding Driver Alertness Project
 
 3. Final code is the python file needed to be run in Raspberry Pi.
 
-In oder to run the app on iphone, the user must have apple developer account (free to create), it is a general requirement for ios develement.
+In oder to run the app on iphone, the user must have an apple developer account (free to create), it is a general requirement for ios develement.
 
 Firstly, click the clone or download button on the top right, then select “Download ZIP”.
 
