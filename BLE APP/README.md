@@ -1,3 +1,8 @@
-# Basic-Chat
-Bluetooth Low Energy App for iOS using Swift.
-Looking to learn how Bluetooth Low Energy works in iOS & Swift 3? Well look no farther, we've got what you've been waiting for!
+# 3rd-Year-Group-Project
+Storage space for all the software regarding Driver Alertness Project
+
+BLE APP folder contains the code for the ios app.
+
+Final Raspberry Case.zip contains the 3D printing design of the case.
+
+Final code is the python file needed to be run in Raspberry Pi.
