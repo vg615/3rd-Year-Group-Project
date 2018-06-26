@@ -1,11 +1,11 @@
 # 3rd-Year-Group-Project
 Storage space for all the code and software regarding Driver Alertness Project
 
-BLE APP folder contains the code for the ios app.
+1. BLE APP folder contains the code for the ios app.
 
-Final Raspberry Case.zip contains the 3D printing design of the case.
+2. Final Raspberry Case.zip contains the 3D printing design of the case.
 
-Final code is the python file needed to be run in Raspberry Pi.
+3. Final code is the python file needed to be run in Raspberry Pi.
 
 In oder to run the app on iphone, the user must have apple developer account (free to create), it is a general requirement for ios develement.
 
