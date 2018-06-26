@@ -117,7 +117,7 @@ class BLECentralViewController : UIViewController, CBCentralManagerDelegate, CBP
         
         if peripheral.name == "raspberrypi"{               //peripheral.name == "raspberrypi"{
         self.peripherals.append(peripheral)
-        }
+       }
         
         peripheral.delegate = self
         self.baseTableView.reloadData()

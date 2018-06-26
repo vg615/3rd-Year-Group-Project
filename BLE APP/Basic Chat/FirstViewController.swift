@@ -17,13 +17,22 @@ class FirstViewController: UIViewController {
         let defaults = UserDefaults.standard
         let token = defaults.string(forKey: "myKey")
         
+        
         do{
+            
             let audioPath1 = Bundle.main.path(forResource: token, ofType: ".mp3")
             try audioPlayer = AVAudioPlayer(contentsOf: NSURL(fileURLWithPath: audioPath1!) as URL)
+            print(token)
+            
+            if(token) == nil{
+                let audioPath1 = Bundle.main.path(forResource: "Bon Jovi-It's My Life", ofType: ".mp3")
+                try audioPlayer = AVAudioPlayer(contentsOf: NSURL(fileURLWithPath: audioPath1!) as URL)
+            }
         }catch{
             print("ERROR")
         }
         // Do any additional setup after loading the view, typically from a nib.
+        
     }
 
     override func didReceiveMemoryWarning() {

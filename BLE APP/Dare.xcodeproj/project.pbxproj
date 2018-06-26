@@ -14,12 +14,15 @@
 		2B35129D20B5A5D4008BAD2A /* Camila Cabello-Never Be the Same.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2B35129820B5A5D3008BAD2A /* Camila Cabello-Never Be the Same.mp3 */; };
 		2B5026B320B31D6700F345B3 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B5026B220B31D6700F345B3 /* FirstViewController.swift */; };
 		2B5026B520B3249800F345B3 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B5026B420B3249800F345B3 /* SecondViewController.swift */; };
+		2B92281320C19B2500EED078 /* Bon Jovi-It's My Life.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2B92281220C19B2500EED078 /* Bon Jovi-It's My Life.mp3 */; };
+		2B92281520C7F6BA00EED078 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B92281420C7F6BA00EED078 /* StoreKit.framework */; };
+		2B92281720C7F6D500EED078 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B92281620C7F6D500EED078 /* MediaPlayer.framework */; };
+		2B92281B20CACCB000EED078 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B92281A20CACCAF00EED078 /* Assets.xcassets */; };
 		2BEDA08820B9B16F00D82FE1 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BEDA08720B9B16F00D82FE1 /* CoreBluetooth.framework */; };
 		2BEDA08C20B9B2E300D82FE1 /* UartModuleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BEDA08B20B9B2E300D82FE1 /* UartModuleViewController.swift */; };
 		D50657241DF2F4C8002B7557 /* UUIDKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = D50657231DF2F4C8002B7557 /* UUIDKey.swift */; };
 		D5B24DDC1DEE393B00D33B5A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5B24DDB1DEE393B00D33B5A /* AppDelegate.swift */; };
 		D5B24DE11DEE393B00D33B5A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5B24DDF1DEE393B00D33B5A /* Main.storyboard */; };
-		D5B24DE31DEE393B00D33B5A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5B24DE21DEE393B00D33B5A /* Assets.xcassets */; };
 		D5B24DE61DEE393B00D33B5A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5B24DE41DEE393B00D33B5A /* LaunchScreen.storyboard */; };
 		D5B24DEE1DEE399800D33B5A /* BLECentralViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5B24DED1DEE399800D33B5A /* BLECentralViewController.swift */; };
 		D5B24DF11DEF153A00D33B5A /* PeripheralTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5B24DEF1DEF153A00D33B5A /* PeripheralTableViewCell.swift */; };
@@ -33,13 +36,16 @@
 		2B35129820B5A5D3008BAD2A /* Camila Cabello-Never Be the Same.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Camila Cabello-Never Be the Same.mp3"; sourceTree = "<group>"; };
 		2B5026B220B31D6700F345B3 /* FirstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		2B5026B420B3249800F345B3 /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		2B92281220C19B2500EED078 /* Bon Jovi-It's My Life.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Bon Jovi-It's My Life.mp3"; sourceTree = "<group>"; };
+		2B92281420C7F6BA00EED078 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		2B92281620C7F6D500EED078 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		2B92281A20CACCAF00EED078 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "../../update/Basic Chat/Assets.xcassets"; sourceTree = "<group>"; };
 		2BEDA08720B9B16F00D82FE1 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
 		2BEDA08B20B9B2E300D82FE1 /* UartModuleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UartModuleViewController.swift; path = "../../../../.Trash/当前实验版本/Dare/UartModuleViewController.swift"; sourceTree = "<group>"; };
 		D50657231DF2F4C8002B7557 /* UUIDKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UUIDKey.swift; sourceTree = "<group>"; };
 		D5B24DD81DEE393B00D33B5A /* Dare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dare.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5B24DDB1DEE393B00D33B5A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D5B24DE01DEE393B00D33B5A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		D5B24DE21DEE393B00D33B5A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D5B24DE51DEE393B00D33B5A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D5B24DE71DEE393B00D33B5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D5B24DED1DEE399800D33B5A /* BLECentralViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BLECentralViewController.swift; sourceTree = "<group>"; };
@@ -51,6 +57,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B92281720C7F6D500EED078 /* MediaPlayer.framework in Frameworks */,
+				2B92281520C7F6BA00EED078 /* StoreKit.framework in Frameworks */,
 				2BEDA08820B9B16F00D82FE1 /* CoreBluetooth.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -63,6 +71,7 @@
 			children = (
 				2B35129420B5A5D3008BAD2A /* Sample.mp3 */,
 				2B35129520B5A5D3008BAD2A /* Kendrick Lamar-All The Stars (Clean).mp3 */,
+				2B92281220C19B2500EED078 /* Bon Jovi-It's My Life.mp3 */,
 				2B35129620B5A5D3008BAD2A /* SZA-Doves In the Wind (Explicit).mp3 */,
 				2B35129720B5A5D3008BAD2A /* Calvin Harris-One Kiss.mp3 */,
 				2B35129820B5A5D3008BAD2A /* Camila Cabello-Never Be the Same.mp3 */,
@@ -73,6 +82,8 @@
 		2BEDA08620B9B16F00D82FE1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2B92281620C7F6D500EED078 /* MediaPlayer.framework */,
+				2B92281420C7F6BA00EED078 /* StoreKit.framework */,
 				2BEDA08720B9B16F00D82FE1 /* CoreBluetooth.framework */,
 			);
 			name = Frameworks;
@@ -106,7 +117,7 @@
 				D50657231DF2F4C8002B7557 /* UUIDKey.swift */,
 				2BEDA08B20B9B2E300D82FE1 /* UartModuleViewController.swift */,
 				D5B24DDF1DEE393B00D33B5A /* Main.storyboard */,
-				D5B24DE21DEE393B00D33B5A /* Assets.xcassets */,
+				2B92281A20CACCAF00EED078 /* Assets.xcassets */,
 				D5B24DE41DEE393B00D33B5A /* LaunchScreen.storyboard */,
 				D5B24DE71DEE393B00D33B5A /* Info.plist */,
 				2B35129320B5A5D3008BAD2A /* Songs */,
@@ -177,10 +188,11 @@
 				D5B24DE61DEE393B00D33B5A /* LaunchScreen.storyboard in Resources */,
 				2B35129C20B5A5D4008BAD2A /* Calvin Harris-One Kiss.mp3 in Resources */,
 				2B35129A20B5A5D4008BAD2A /* Kendrick Lamar-All The Stars (Clean).mp3 in Resources */,
-				D5B24DE31DEE393B00D33B5A /* Assets.xcassets in Resources */,
+				2B92281320C19B2500EED078 /* Bon Jovi-It's My Life.mp3 in Resources */,
 				2B35129920B5A5D4008BAD2A /* Sample.mp3 in Resources */,
 				2B35129D20B5A5D4008BAD2A /* Camila Cabello-Never Be the Same.mp3 in Resources */,
 				D5B24DE11DEE393B00D33B5A /* Main.storyboard in Resources */,
+				2B92281B20CACCB000EED078 /* Assets.xcassets in Resources */,
 				2B35129B20B5A5D4008BAD2A /* SZA-Doves In the Wind (Explicit).mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -343,7 +355,7 @@
 				INFOPLIST_FILE = "Basic Chat/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Beaasfascasd;
+				PRODUCT_BUNDLE_IDENTIFIER = Fdsfvsdcabn;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -357,7 +369,7 @@
 				INFOPLIST_FILE = "Basic Chat/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Beaasfascasd;
+				PRODUCT_BUNDLE_IDENTIFIER = Fdsfvsdcabn;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};

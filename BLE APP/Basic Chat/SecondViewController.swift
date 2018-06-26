@@ -5,7 +5,6 @@
 //  Created by JwLwJ on 05/05/2018.
 //  Copyright © 2018 JwLwJ. All rights reserved.
 //
-
 import UIKit
 import AVFoundation
 
@@ -16,8 +15,8 @@ var audioPlayerTimer = Timer()
 
 
 class SecondViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-
-   
+    
+    
     @IBOutlet weak var myTableView: UITableView!
     var  nameText = ""
     
@@ -26,30 +25,33 @@ class SecondViewController: UIViewController, UITableViewDelegate, UITableViewDa
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let defaults = UserDefaults.standard
+        let token = defaults.string(forKey: "myKey")
         let cell = UITableViewCell(style: .default, reuseIdentifier: "cell")
         cell.textLabel?.text = songs[indexPath.row]
+        if(cell.textLabel?.text == token){
+            cell.accessoryType = .checkmark
+        }
         return cell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         do{
-           
+            
             let audioPath = Bundle.main.path(forResource: songs[indexPath.row], ofType: ".mp3")
             nameText = songs[indexPath.row]
-           // performSegue(withIdentifier: "name", sender: "self")
-           
             try audioPlayer = AVAudioPlayer(contentsOf: NSURL(fileURLWithPath: audioPath!) as URL)
             for row in 0..<tableView.numberOfRows(inSection: indexPath.section) {
                 if let cell = tableView.cellForRow(at: IndexPath(row: row, section: indexPath.section)) {
                     cell.accessoryType = row == indexPath.row ? .checkmark : .none
                 }
             }
-             tableView.cellForRow(at: indexPath)?.accessoryType = UITableViewCellAccessoryType.checkmark
+            //tableView.cellForRow(at: indexPath)?.accessoryType = UITableViewCellAccessoryType.checkmark
             
             let defaults = UserDefaults.standard
             defaults.set(nameText, forKey: "myKey")
             defaults.synchronize()
-             print("歌曲已经选定")
+            print("歌曲已经选定")
         }
         catch{
             print("ERROR")
@@ -60,7 +62,6 @@ class SecondViewController: UIViewController, UITableViewDelegate, UITableViewDa
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        
         gettingSongNmae()
     }
     
@@ -77,8 +78,7 @@ class SecondViewController: UIViewController, UITableViewDelegate, UITableViewDa
             let songPath = try FileManager.default.contentsOfDirectory(at: folderURL, includingPropertiesForKeys: nil, options: .skipsHiddenFiles)
             // have all of our files stored in constant array songPath
             
-       
-            
+        
             for song in songPath{
                 //loop through constant
                 var mySong = song.absoluteString
@@ -91,16 +91,14 @@ class SecondViewController: UIViewController, UITableViewDelegate, UITableViewDa
                     songs.append(mySong)
                 }
             }
-            
-          
+
             myTableView.reloadData()
             
         }
         catch{
-            
+             print("ERROR")
         }
     }
     
-   
+    
 }
-
